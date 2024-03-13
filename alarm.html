@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm clock</title>
+    <link rel="stylesheet" href="alarm.css">
+</head>
+<body>
+   <div class="container">
+   <div class="title-text">
+        <h1>Alarm clock</h1>
+   </div>
+   <div class="time">
+        <input type="time" id="timeInput">
+        <button id="set_time">Set time</button>
+        <p id="time_set">The time you set is: </p>
+   </div>
+   <div class="set_stop">
+    <div class="set_alarm">
+        <button id="set_alarm">Set</button>
+   </div>
+   <div class="stop_alarm">
+        <button id="stop_alarm">Stop</button>
+    </div>
+   </div>
+  
+   <div class="live-time" id="liveTime"> 
+        Live time:
+</div>
+<div class="play">
+    <p id="alarm_message">Alarm note</p>
+</div>
+</div>
+
+
+   <audio id="Alarm_music" autoplay loop>
+     <source src="alarmRing/morning-in-a-big-city-8099.mp3" type="audio/mp3">
+   </audio>
+    <script src="alarm.js"></script>
+</body>
+</html>
